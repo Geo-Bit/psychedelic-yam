@@ -5,6 +5,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqllite:///response.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+#DB
+
 db = SQLAlchemy(app)
 
 class Response(db.Model):
